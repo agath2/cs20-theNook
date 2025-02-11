@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>The Nook | A Taste of Home</title>
+                <link rel="stylesheet" href="styles.css" />
+                <style type="text/css">
+                        .hero-image {
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cozy_pancakes.jpg");
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                height: 40vh;
+                                background-size: cover;
+                                text-align: center;
+                                margin-top: 0px; /* attempt to delete space btw nav & hero */
+                        }
+                        .image-container {
+                                width: 400px; 
+                                justify-content: center;
+                        }
+                        .dish-name {
+                                font-size: 20px;
+                                font-weight: bold;
+                        }
+                        .dish-description {
+                                font-size: 18px;
+                        }
+
+                        @media (max-width: 1150px) {
+                                .sample-recipe {
+                                        flex-direction: column; /* Stack items vertically */
+                                        align-items: center; /* Center the items horizontally */
+                                        gap: 20px; 
+                                }
+
+                                .image-container {
+                                        
+                                        text-align: center; /* Centers text inside each container */
+                                }
+
+                                .image {
+                                        width: 100%; /* Ensures the images take full width of the container */
+                                        height: auto; /* Maintain aspect ratio */
+                                }
+                        }
+
+                        @media (max-width: 800px) {
+                                .star-chief {
+                                        flex-direction: column; /* Stack items vertically */
+                                        align-items: center; 
+                                        margin-left: 0; 
+                                        margin-right: 0; 
+                                }
+
+                                .star-chief img {
+                                        height: auto; /* Maintain aspect ratio */
+                                        margin-right: 0; /* Remove the margin */
+                                        margin-bottom: 20px; /* Add space below the image */
+                                }
+
+                                .star-chief div {
+                                        text-align: center; 
+                                        width: 90%; 
+                                }
+
+                                .star-chief p {
+                                        font-size: 18px; /* Adjust font size for readability */
+                                        margin-right: 0; /* Remove any extra margin */
+                                }
+
+                                .body-title {
+                                        font-size: 26px; /* Adjust title size for smaller screens */
+                                }
+                        }
+                </style>
+        </head>
+
+        <body>
+                <div class="head" style="margin: 0px;">
+                        <ul id="navBar">
+                                <li><a href="recipe.html" target="_blank">Recipes</a></li>
+                                <li><a href="members.html" target="_blank">Membership</a></li>
+                                <li><a href="dinein.html" target="_blank">Dine In</a></li>
+                                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                        </ul>
+                </div>
+
+                <div class="hero-image">
+                        <div class="hero-text">
+                                <h1 style="padding-top: 95px">The Nook Eatery</h1>
+                                <p style="font-size: 28px; font-style: italic;">~~ Warm Bites, Rich Stories ~~</p>
+                        </div>
+                </div> 
+
+                <div class="body-text">
+                        <h2 class="body-title">Signiture Dishes</h2>
+                        <div class="sample-recipe flex-container">
+                                <div class="image-container">
+                                        <img src="images/dumplings.jpg" class="image" alt="dumplings" width="360px" height="300px"/>
+                                        <div class="dish-text">
+                                                <p class="dish-name">Golden Hearth Dumplings</p>
+                                                <p class="dish-description">
+                                                        A warm and comforting dumpling dish filled with a savory blend of seasoned meat and vegetables, 
+                                                        wrapped in a delicate dough and served with a rich, aromatic dipping sauce. 
+                                                        Perfect for cozy gatherings or a homemade treat.
+                                                </p>
+                                        </div>
+                                </div>
+                                <div class="image-container">
+                                        <img src="images/fried-rice.jpg" class="image" alt="fried rice" width="360px" height="300px"/>
+                                        <p class="dish-name">Uyghur Fried Rice</p>
+                                        <p class="dish-description">
+                                                A fragrant and flavorful Uyghur-style fried rice dish inspired by the rich culinary traditions of the Silk Road. 
+                                                Featuring tender lamb, aromatic spices, and golden grains of rice, 
+                                                this dish is a hearty and comforting meal perfect for any occasion.
+                                        </p>
+                                </div>
+                                <div class="image-container">
+                                        <img src="images/ramen.jpg" alt="ramen" width="360px" height="300px"/>
+                                        <p class="dish-name">Lanzhou Ramen</p>
+                                        <p class="dish-description">
+                                                Rich, umami-packed dish with a flavorful broth, tender noodles, and delicious toppings. 
+                                                Enjoy a hearty meal with exciting flavors of spiciness, savory, and umami.
+                                                Easy and quick to make.
+                                                It's a cozy meal perfect for any time of the day.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 20px;">
+                                <li style="font-size: 28px;  border: 1.5px solid #7c5631; border-radius: 10px; padding: 2px;">
+                                        <a href="recipe.html" target="_blank"> Start Cooking! </a>
+                                </li>
+                        </div>
+                </div>
+
+                <div class="body-text">
+                        <h2 class="body-title">Our Star Chef</h2>    
+                        <div class="star-chief" style="display: flex; align-items: flex-start; margin-left: 40px;">
+                            <img src="images/chef-brief.jpg" alt="chef" width="260px" height="360px" style="margin-right: 40px;"/>
+                            <div>
+                                <p style="font-size: 23px; font-weight: bold;">Chef Lovell</p>
+                                <p style="font-size: 18px; margin-right: 50px;">
+                                        At the heart of The Nook is our visionary head chef, Lovell, 
+                                        a culinary artist whose passion for food is woven into every dish. <br /><br />
+                                        Growing up in a home where the kitchen was the center of warmth and storytelling, 
+                                        Lovell was captivated by the way flavors could bring people together. <br /><br />
+                                        Her journey began in a small family-owned eatery, where she mastered the art of balancing bold, 
+                                        earthy flavors with delicate, comforting textures.<br /><br />
+                                        With years of experience in fine dining and a deep appreciation for traditional home cooking, 
+                                        Lovell combines rich culinary traditions with modern creativity. 
+                                        She believes that every meal should be an experience — one that tells a story, sparks nostalgia, 
+                                        and leaves a lasting impression. <br /><br />
+                                        At The Nook, she carefully crafts recipes that celebrate authenticity while inviting guests to explore new flavors. 
+                                        Whether it's a cozy bowl of Golden Harmony Ramen or a plate of handcrafted dumplings, 
+                                        Chef Lovell ensures that every bite feels like home.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+
+                <footer class="footer">
+                        <div class="flex-container">
+                                <div>
+                                        <h3>About Us</h3>
+                                        <p style="font-size: 14px;">
+                                                Since 200 B.C., The Nook have been striving to be a home away from home for its customers.
+                                                </br>
+                                                Crunch into earthy flavors while catching up with an old friend. 
+                                        </p>
+                                        <p style="font-size: 14px;">
+                                                Author: Agatha Yang <br />
+                                                Course: SP25 CS20
+                                        </p>
+                                </div>
+                                <div>
+                                        <h3>Contact Us</h3>
+                                        <p style="font-size: 14px;">
+                                                123-456-7890
+                                                </br>
+                                                theNookEatery@mymail.com
+                                        </p>
+                                </div>
+                                <div>
+                                        <h3>Visit Us</h3>
+                                        <p style="font-size: 14px;">389 Boston Avenue</br>Medford, MA</p>
+                                </div>
+                        </div>
+                </footer>
+        </body>
+</html>
